@@ -1,0 +1,28 @@
+<div class="animated bounceInRight hot">
+	<show-lb class="lb_wrap">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<img src="img/1.jpg" class="swiper-slide">
+				<img src="img/3.jpg" class="swiper-slide">
+				<img src="img/6.jpg" class="swiper-slide">
+			</div>
+			<!-- 分页 -->
+			<div class="swiper-pagination"></div>
+		</div>
+	</show-lb>
+
+	<div class="hot_box">
+		<div ng-repeat="i in hotData" class="hot_main" ng-click="change($index)">
+			<dl class="hot_user">
+				<dt><img src="./img/{{i.headerImg}}"></dt>
+				<dd>{{i.title}}</dd>
+				<dd><small class="fa fa-map-marker"></small>  {{i.city}}</dd>
+			</dl>
+			<video src="{{i.videoSrc}}" class="hot_img"></video>
+			<p class="hot_p">
+				<a><i class="fa fa-star"></i>  {{i.look}}</a>  在看
+				<small><i class="fa fa-heart"></i>  {{i.attention}}</small>  关注
+			</p>
+		</div>
+	</div>
+</div>

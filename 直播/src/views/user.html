@@ -1,0 +1,18 @@
+<div class="animated bounceInRight user">
+	<div class="user_box">
+		<dl>
+			<dt><img src="./img/logo.png"></dt>
+			<dd>欢迎进入 {{myUserData.username}} 的邻客直播</dd>
+			<dd>今天你直播了么？</dd>
+		</dl>	
+	</div>
+	<div class="user_p">
+		<span class="yellow" ng-style="skinColor">5346</span><span>6456</span>
+	</div>
+	<div class="user_wrap">
+		<ul ng-repeat="i in wdData" ng-click = "user_change(i.url)">
+			<li><i class="fa {{i.fa}}"></i></li>
+			<li><span>{{i.title}} {{i.num}}</span></li>
+		</ul>
+	</div>
+</div>

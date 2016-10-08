@@ -1,0 +1,13 @@
+<div class="wrap wraper">
+	<header class="header" ng-style="skinColor"><span ng-show = "returnShow" ng-click = "returnBtn('/wrap/wrap.user')" class="fa fa-angle-left returnBtn"></span>{{newTitle}}</header>
+
+	<div ui-view class="main"></div>
+
+	<footer class="footer" ng-show="footerShow" ng-style="skinColor">
+		<nav>
+			<a ng-repeat="i in footerIco" ng-click="change($index)">
+				<i class="fa {{i.ico}}" ng-class="{true:'active',false:''}[i.active]"></i>
+			</a>
+		</nav>	
+	</footer>
+</div>

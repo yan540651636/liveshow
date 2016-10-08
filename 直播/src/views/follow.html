@@ -1,0 +1,13 @@
+<div class="wrap follow animated bounceInRight">
+	<img src="../img/follow_banna.png" class="follow_banna">
+	<ul class="follow_ul">
+		<li ng-repeat = "i in followData">
+			<img src="./img/{{i.headerImg}}">
+			<div>
+				<p><b>{{i.username}}</b></p>
+				<p class="ccc">{{i.city}}</p>
+			</div>
+			<span class="ccc">{{i.time}}</span>
+		</li>
+	</ul>
+</div>

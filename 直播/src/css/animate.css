@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes bounceInRight {
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+  }
+
+  99% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInRight {
+  -webkit-animation-name: bounceInRight;
+}
+
+@keyframes bounceInUp {
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 1000px, 0) scale(3);
+    transform: translate3d(0, 1000px, 0) scale(3);
+  }
+
+  99% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+}
+.bounce_1{
+  -webkit-animation-delay:0s;
+}
+.bounce_2{
+  -webkit-animation-delay:0.5s;
+}
+.bounce_3{
+  -webkit-animation-delay:1s;
+}
+.bounce_4{
+  -webkit-animation-delay:1.5s;
+}
+.bounce_5{
+  -webkit-animation-delay:2s;
+}
+
+@keyframes bounceInDown {
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -1000px, 0);
+    transform: translate3d(0, -1000px, 0);
+  }
+
+  99% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+}
+
+@keyframes bounceInScale {
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-150px, 300px, 0) scale(50);
+    transform: translate3d(-150px, 300px, 0) scale(50);
+  }
+
+  99% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInScale {
+  -webkit-animation-name: bounceInScale;
+}

@@ -1,0 +1,18 @@
+<div class="animated bounceInRight video wrap">
+	<dl class="video_user animated bounceInDown">
+		<dt><img src="./img/{{myVideoData.headerImg}}"></dt>
+		<dd>{{myVideoData.title}}</dd>
+		<dd><small>直播中...</small></dd>
+	</dl>
+
+	<p class="video_p">
+		<a><i class="fa fa-star"></i>  {{myVideoData.look}}</a> 在看<br>
+		<small><follow-ele class="fa fa-heart followele"></follow-ele>  {{myVideoData.attention}}</small> 关注
+	</p>
+	<!-- <video id="video" autoplay><ideo>  -->
+	<video src="{{myVideoData.videoSrc}}" id="myvideo" autoplay class="myvideo" ng-click = "followThis()"></video>
+	
+	<show-comment class="comment">
+		<p ng-repeat="i in commentData" class="animated bounceInUp {{i.classV}}"><span>{{i.cName}}：</span><label>{{i.text}}</label></p>
+	</show-comment>
+</div>
